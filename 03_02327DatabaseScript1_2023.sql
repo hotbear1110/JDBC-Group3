@@ -72,29 +72,29 @@ FOREIGN KEY (Footage) REFERENCES Footage(Title)
 INSERT INTO Address 
 (Street_Name, Civic_Number, City, Zip_Code, Country)
 VALUES 
-("Nullvej", "132", "Kgs. Lyngby", "2800", "Denmark"),
-("Nybrovej", "28", "Holte", "2840", "Denmark"),
-("Østergaardsvej", "12", "Gentofte", "2820", "Denmark"),
-("Hovedgade", "9", "Nærum", "2850", "Denmark"),
-("Vestergaardsvej", "13", "Virum", "2830", "Denmark");
+("Nullvejen", "13", "Farum", "4030", "Poland"),
+("Broenernyvej", "8", "Forum", "2890", "Germany"),
+("Testvejen", "1", "Stenløse", "3050", "Sweden"),
+("Vandvejen", "3", "Vandland", "0000", "Havet"),
+("Theroadestroad", "78", "Amstedam", "6666", "Holland");
 
 INSERT INTO Journalist
 (CPR, First_Name, Last_Name, Address, Telephone, Email)
 VALUES
-(10103040, "Mark", "Miller", "132", "25743696", "Markmiller@hotmail.com"),
-(30302125, "Olga", "Owens", "28", "23586423", "Olgaowens@coolmail.com"),
-(10203344, "Lukas", "Laas", "12", "98543738", "Lukeydaone@ballmail.com"),
-(20208981, "Pia", "Pabst", "9", "59784645", "Pabster01@gmail.com"),
-(10204410, "Nick", "Nassar", "13", "56468643", "Detgoernass@outlook.com");
+(10103043, "Mac", "Miller", "13", "25743696", "Returnofthemack@hotmail.com"),
+(30302127, "Olga", "Owensen", "8", "23586423", "Olgaowens@coolmail.com"),
+(10203341, "Lukas", "Lukas", "1", "98543738", "Lukeydaone@ballmail.com"),
+(20208970, "Lobster", "Pabster", "3", "59784645", "Pabster01@gmail.com"),
+(10204413, "Nasser", "Nassar", "78", "56468643", "Detgoernass@outlook.com");
 
 INSERT INTO Footage 
 (Title, Date, Duration, Journalist)
 VALUES
-("Royal Wedding", 20040514, 174, 10103040),
-("COVID-19 Restrictions", 20200311, 162, 30302125),
-("Fatal Car Accident", 20211009, 108, 30302125),
-("Pottery Exhibit", 20211110, 98, 10203344),
-("Superliga Final Match", 20220529, 118, 20208981),
-("SAS Strike", 20220718, 112, 30302125),
-("Election Day", 20221101, 155, 10204410),
-("Snowstorm", 20230306, 111, 10103040);
+("Normal Wedding", 20040517, 89, 10103043),
+("COVID-19 Allowances", 20200316, 78, 30302127),
+("Non Fatal Fatal Car Accident", 20211006, 87, 30302127),
+("Most exciting Pottery Exhibit", 20211115, 67, 10203341),
+("Superliga Final Matchbox", 20220522, 113, 20208970),
+("SAS Nuclear Strike", 20220713, 117, 10103043),
+("Election Days", 20221104, 152, 10204413),
+("Big Snowstorm", 20230308, 110, 10203341);
