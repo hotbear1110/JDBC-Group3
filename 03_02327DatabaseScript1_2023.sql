@@ -79,13 +79,13 @@ VALUES
 ("Vestergaardsvej", "13", "Virum", "2830", "Denmark");
 
 INSERT INTO Journalist
-(CPR, First_Name, Last_Name, Address)
+(CPR, First_Name, Last_Name, Address, Telephone, Email)
 VALUES
-(10103040, "Mark", "Miller", "132"),
-(30302125, "Olga", "Owens", "28"),
-(10203344, "Lukas", "Laas", "12"),
-(20208981, "Pia", "Pabst", "9"),
-(10204410, "Nick", "Nassar", "13");
+(10103040, "Mark", "Miller", "132", "25743696", "Markmiller@hotmail.com"),
+(30302125, "Olga", "Owens", "28", "23586423", "Olgaowens@coolmail.com"),
+(10203344, "Lukas", "Laas", "12", "98543738", "Lukeydaone@ballmail.com"),
+(20208981, "Pia", "Pabst", "9", "59784645", "Pabster01@gmail.com"),
+(10204410, "Nick", "Nassar", "13", "56468643", "Detgoernass@outlook.com");
 
 INSERT INTO Footage 
 (Title, Date, Duration, Journalist)
