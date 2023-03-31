@@ -10,6 +10,8 @@ GROUP BY First_Name
 
 SELECT journalist.First_name, footage.Title FROM footage INNER JOIN journalist ON footage.Journalist = journalist.CPR
 
-Select Title 
-From Item as I
-Where I.Edition
+
+SELECT Street_Name, Zip_Code
+FROM Address
+
+SELECT Duration, Title FROM footage
