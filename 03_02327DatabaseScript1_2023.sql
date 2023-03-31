@@ -65,7 +65,7 @@ Title VARCHAR(255),
 Views int(255),
 Edition int(8),
 Footage VARCHAR(255),
-CONSTRAINT Item PRIMARY KEY (Title),
+CONSTRAINT Item PRIMARY KEY (Time),
 FOREIGN KEY (Title) REFERENCES Topic(Title),
 FOREIGN KEY (Edition) REFERENCES Edition(Time),
 FOREIGN KEY (Footage) REFERENCES Footage(Title)

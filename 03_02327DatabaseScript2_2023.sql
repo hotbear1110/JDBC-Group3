@@ -17,4 +17,37 @@ FROM Address;
 
 SELECT Duration, Title FROM footage;
 
-SELECT title FROM item AS i, edition AS e WHERE e.Time = i.Edition AND e.Duration >= 20;
+SELECT title FROM item AS i, edition AS e WHERE e.Time = i.Edition AND e.Duration >= 1200;
+
+DROP PROCEDURE IF EXISTS Insert_Journalist;
+
+CREATE PROCEDURE Insert_Journalist(IN CPR INT(10), IN First_Name VARCHAR(255), IN Last_Name VARCHAR(255), IN email VARCHAR(255), address VARCHAR(255))
+
+INSERT INTO journalist(CPR, First_Name, Last_Name, email, address) VALUES (CPR, First_Name, Last_name, email, address);
+
+CALL Insert_Journalist("1104761354", "Per", "Hansen", "per1976@gmail.com", "8");
+
+DROP FUNCTION IF EXISTS Get_CPR;
+
+DELIMITER //
+
+CREATE FUNCTION Get_CPR(vFirst_Name VARCHAR(255))
+
+RETURNS int
+
+BEGIN
+
+DECLARE vCPR INT;
+
+SELECT CPR INTO vCPR FROM journalist
+
+WHERE First_Name = vFirst_Name;
+
+RETURN vCPR;
+
+END//
+
+DELIMITER ;
+
+
+SELECT Get_CPR("Lobster");
