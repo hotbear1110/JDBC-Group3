@@ -98,3 +98,33 @@ VALUES
 ("SAS Nuclear Strike", 20220713, 117, 10103043),
 ("Election Days", 20221104, 152, 10204413),
 ("Big Snowstorm", 20230308, 110, 10203341);
+
+INSERT INTO Topic
+(Title, Description, Journalist, Role)
+VALUES
+("Crime", "There is danger around the corner but who is it?", "10103043", "Supervisor"),
+("Nature", "There is such beauty all around us", "30302127", "Supervisor"), 
+("Tech", "The whole world is at your fingertips", "10203341", "Supervisor"),
+("Politics", "A big piece of your daily life", "20208970", "Supervisor"),
+("Entertainment", "The most entertaining stuff you have ever seen!", "20208970", "Supervisor"),
+("Health", "Your well being", "10204413", "Supervisor");
+
+INSERT INTO Edition
+(Duration, Time, CPR)
+VALUES
+(300, 1680246455, 10103043),
+(576, 1680160055, 30302127),
+(698, 1680073655, 10203341),
+(1560, 1680332855, 20208970),
+(1268, 1680419255, 20208970),
+(357, 1680505655, 10204413);
+
+INSERT INTO Item
+(Time, Description, Title, Views, Edition, Footage)
+VALUES
+(1680592055, "Crimescene", "Crime", 200, 1680246455, "Non Fatal Fatal Car Accident"),
+(1680318455, "Snowstorm", "Nature", 169, 1680160055, "Big Snowstorm"),
+(1680307655, "Nukes and their tech", "Tech", 186, 1680073655, "SAS Nuclear Strike"),
+(1680304055, "Election Day", "Politics", 250, 1680332855, "Election Days"),
+(1680343655, "Funny stuff", "Entertainment", 140, 1680419255, "Superliga Final Matchbox"),
+(1680347015, "How pottery can increase health", "Health", 96, 1680505655, "Most exciting Pottery Exhibit");
