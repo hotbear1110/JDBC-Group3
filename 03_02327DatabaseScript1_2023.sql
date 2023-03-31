@@ -110,7 +110,7 @@ VALUES
 ("Health", "Your well being", "10204413", "Supervisor");
 
 INSERT INTO Edition
-(Duration, Time, CPR)
+(Duration, Time, Journalist)
 VALUES
 (300, 1680246455, 10103043),
 (576, 1680160055, 30302127),
