@@ -34,6 +34,7 @@ Journalist int(10),
 CONSTRAINT Footage_pk PRIMARY KEY (Title),
 CONSTRAINT Footage_Duration CHECK (Duration <= 180 AND Duration > 0),
 FOREIGN KEY (Journalist) REFERENCES Journalist (CPR)
+ON DELETE SET NULL
 ) DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE Edition (
@@ -43,6 +44,7 @@ Journalist int(10),
 CONSTRAINT Edition_pk PRIMARY KEY (Time),
 CONSTRAINT Edition_Duration CHECK (Duration <= 1800 AND Duration > 0),
 FOREIGN KEY (Journalist) REFERENCES Journalist (CPR)
+ON DELETE SET NULL
 ) DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE Topic (
@@ -53,6 +55,7 @@ Role VARCHAR(255),
 
 CONSTRAINT Topic_pk PRIMARY KEY (Title),
 FOREIGN KEY (Journalist) REFERENCES Journalist (CPR)
+ON DELETE SET NULL
 ) DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE Item (
