@@ -2,6 +2,7 @@ DELETE from Journalist WHERE Address="1":
 UPDATE Journalist
 SET Email = "Testmail@gmail.com"
 WHERE First_Name = "Olga":
+INSERT Address VALUES("Vejen", "18", "Byen", "6040", "Fairytaleland")
 INSERT Journalist VALUES(90102037, 'Muc', 'Milla', '18', '64564345', 'mosttest@hotmail.com'):
 
 SELECT First_Name 
