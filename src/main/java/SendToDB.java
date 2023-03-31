@@ -1,14 +1,16 @@
 import java.sql.*;
+import java.util.Scanner;
 
 public class SendToDB {
-    public static void send(FootageAndReporter footageAndReporter) {
-        String host = "localhost";
-        String port = "3307";
-        String database = "tv3db";
-        String cp = "utf8";
 
-        String username = "root";
-        String password = "mads3241";
+    public static String host;
+    public static String port;
+    public static String database;
+    public static String username;
+    public static String password;
+    public static void send(FootageAndReporter footageAndReporter) {
+
+        String cp = "utf8";
 
         String url = "jdbc:mysql://" + host + ":" + port + "/" + database + "?characterEncoding=" + cp;
 
