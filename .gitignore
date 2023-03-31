@@ -19,4 +19,5 @@ target/
 # Other
 *.pdf
 *.log
+*.class
 DS_STORE
