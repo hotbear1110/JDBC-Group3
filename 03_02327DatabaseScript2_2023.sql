@@ -16,3 +16,5 @@ SELECT Street_Name, Zip_Code
 FROM Address;
 
 SELECT Duration, Title FROM footage;
+
+SELECT title FROM item AS i, edition AS e WHERE e.Time = i.Edition AND e.Duration >= 20;
